@@ -8,10 +8,11 @@ import { RegisterComponent } from './login/register.component';
 import { PagesModule } from './pages/pages.module';
 import { FormsModule } from '@angular/forms';
 import { ChartsModule } from 'node_modules/ng2-charts';
+import { ServiceModule } from './services/service.module';
 
 @NgModule({
   declarations: [AppComponent, LoginComponent, RegisterComponent],
-  imports: [BrowserModule, PagesModule, AppRoutingModule, FormsModule, ChartsModule],
+  imports: [BrowserModule, PagesModule, AppRoutingModule, FormsModule, ChartsModule, ServiceModule],
   providers: [],
   bootstrap: [AppComponent]
 })

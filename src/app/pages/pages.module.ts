@@ -9,6 +9,7 @@ import { FormsModule } from '@angular/forms';
 import { IncrementadorComponent } from '../components/incrementador/incrementador.component';
 import { ChartsModule } from 'node_modules/ng2-charts';
 import { GraficaComponent } from '../components/grafica/grafica.component';
+import { AccountSettingsComponent } from './account-settings/account-settings.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { GraficaComponent } from '../components/grafica/grafica.component';
     ProgressComponent,
     Graficas1Component,
     IncrementadorComponent,
-    GraficaComponent
+    GraficaComponent,
+    AccountSettingsComponent
   ],
   exports: [DashboardComponent, ProgressComponent, Graficas1Component],
   imports: [SharedModule, PagesRoutingModule, FormsModule, ChartsModule]

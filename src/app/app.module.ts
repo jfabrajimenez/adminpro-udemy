@@ -6,13 +6,21 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './login/register.component';
 import { PagesModule } from './pages/pages.module';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ChartsModule } from 'node_modules/ng2-charts';
 import { ServiceModule } from './services/service.module';
 
 @NgModule({
   declarations: [AppComponent, LoginComponent, RegisterComponent],
-  imports: [BrowserModule, PagesModule, AppRoutingModule, FormsModule, ChartsModule, ServiceModule],
+  imports: [
+    BrowserModule,
+    PagesModule,
+    AppRoutingModule,
+    FormsModule,
+    ChartsModule,
+    ServiceModule,
+    ReactiveFormsModule
+  ],
   providers: [],
   bootstrap: [AppComponent]
 })

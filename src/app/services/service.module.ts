@@ -9,7 +9,8 @@ import {
   MedicoService,
   SubirArchivoService,
   LoginGuardGuard,
-  AdminGuard
+  AdminGuard,
+  VerificaTokenGuard
 } from './service.index';
 import { HttpClientModule } from '@angular/common/http';
 import { ModalUploadService } from '../components/modal-upload/modal-upload.service';
@@ -27,7 +28,8 @@ import { ModalUploadService } from '../components/modal-upload/modal-upload.serv
     SubirArchivoService,
     ModalUploadService,
     LoginGuardGuard,
-    AdminGuard
+    AdminGuard,
+    VerificaTokenGuard
   ]
 })
 export class ServiceModule {}
